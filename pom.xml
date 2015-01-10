@@ -25,14 +25,7 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
 
-	<issueManagement>
-		<system>GitLab Issue Tracking</system>
-		<url>http://forge350.cs.odu.edu:8090/jberlin/project-mutation-testing-team-yellow-1/issues</url>
-	</issueManagement>
-	<ciManagement>
-		<system>Jenkins</system>
-		<url>http://forge350.cs.odu.edu:8080/job/yellow1/</url>
-	</ciManagement>
+	
 	<developers>
 		<developer>
 			<name>John Berlin</name>
