@@ -1,0 +1,12 @@
+public class test1 {
+	public int Add(int num1, int num2, int num3)
+	{
+		int x = num1 + num2 - num3;
+		int y = num1 + num2;
+		int z = (num1 + num2);
+		int y = +10;
+		int x = 10;
+		String h = "num1 + num2";
+		if (num1 + num2 == +10) return 5;
+	}
+}

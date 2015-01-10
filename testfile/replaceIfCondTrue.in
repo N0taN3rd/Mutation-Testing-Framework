@@ -1,0 +1,17 @@
+class replaceIfContTrue {
+    public static void main(String[] args) {
+        System.out.println("Hello World!"); // Display the string.
+		int h = 5;
+		int n = 6;
+		if (n+h == 10)
+		 System.out.println("Not possible!"); // Display the string.
+		 
+		 if (n+h == 11)
+		 System.out.println("Okay!"); // Display the string.
+		 
+		 if((n+h == 11)){
+		 System.out.println("This is Okay Also!"); // Display the string.
+		 }
+
+    }
+}

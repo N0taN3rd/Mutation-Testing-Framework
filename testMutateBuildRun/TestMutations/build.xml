@@ -1,0 +1,36 @@
+<project name="TestMutations" default="run" basedir=".">
+	<property name="src.dir" value="${basedir}/testMutateBuildRun/TestMutations/src"/>
+    <property name="bin.dir" value="${basedir}/testMutateBuildRun/TestMutations/bin"/>
+	<property name="ant.build.javac.source" value="1.7"/>
+	<property name="ant.build.javac.target" value="1.7"/>
+	
+	<target name="init">
+	    <mkdir dir="${bin.dir}"/>
+	</target>
+	<target name="compile">
+		<echo message="Compiling" />
+		<echo message="${src.dir}"/>
+		<mkdir dir="${bin.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${bin.dir}" includeantruntime="false" verbose="true" fork="true"/>	   
+	</target>
+	<target name="build" depends="compile">
+		<echo message="Building Jar" />
+		<delete file="${bin.dir}/test.jar"/>
+		<jar destfile="${bin.dir}/test.jar" basedir="${bin.dir}" >
+			<manifest>
+				<attribute name="Main-Class"
+					value="testingmutation.Main"/>
+			</manifest>
+		</jar>
+	</target>
+	<target name="clean">
+		<echo message="Cleaning bin directory" />
+		<delete file="${bin.dir}/test.jar">
+          <fileset dir="${bin.dir}" includes="**/*.class"/>
+        </delete>
+	</target>
+	<target name="run" depends="clean,build">
+		<echo message="Running Jar" />
+		<java jar="${bin.dir}/test.jar" fork="true"/>
+	</target>
+</project>
