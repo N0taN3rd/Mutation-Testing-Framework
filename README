@@ -1,1 +1,10 @@
-Old Dominion University CS350 Introduction to Software Engineering semester project.
+Old Dominion University CS350 Introduction to Software Engineering team semester project.
+
+Mutation testing framework written in java uing maven. 
+Currently only works on java files and ant projects. 
+
+
+Team: 
+John Berlin n0tan3rd@gmail.com
+Michael Soliman msoliman@cs.odu.edu
+James Ord jxord001@odu.edu
