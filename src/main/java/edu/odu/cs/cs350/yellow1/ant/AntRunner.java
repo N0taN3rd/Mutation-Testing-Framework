@@ -1,3 +1,20 @@
+ /**
+ *	Copyright (C) 2014  John Berlin
+ *
+ *	This program is free software: you can redistribute it and/or modify
+ *	it under the terms of the GNU General Public License as published by
+ *	the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
+ *
+ *	This program is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package edu.odu.cs.cs350.yellow1.ant;
 
 import java.io.File;
@@ -12,7 +29,7 @@ import org.apache.tools.ant.Project;
 import org.apache.tools.ant.ProjectHelper;
 import org.apache.tools.ant.Target;
 
-/**
+/** 
  * <br>This class is responsible for building and running all ant projects pragmatically
  * <br>Tasks able to be execute using this class expect the ant naming convention found at <a href="https://wiki.apache.org/ant/TheElementsOfAntStyle">wiki.apache.org/ant</a>
  * <nl> and expects a target named "run" to run the executable produced by the target compile, build or dist
