@@ -8,7 +8,7 @@ import org.apache.commons.exec.ProcessDestroyer;
 
 /**
  * ProcessDestroyer to be used by {@link DefaultExecutor#setProcessDestroyer(ProcessDestroyer)} 
- * @author jberlin
+ * 
  *
  */
 public class ShutDownSpawnedJVMProcess implements ProcessDestroyer, Runnable {
